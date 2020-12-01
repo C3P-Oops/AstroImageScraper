@@ -1,0 +1,23 @@
+Goal: To build a tool to download images between dates to a folder so that I may use them on my desktop.
+
+Images I chose are from the Astronomy Picture of the Day Archive.
+https://apod.nasa.gov/apod/archivepix.html
+
+Format for each picture URL is https://apod.nasa.gov/apod/apYYMMDD.html where:
+    YY is the 2-digit year
+    MM is the 2-digit month, including leading zeros
+    DD is the 2-digit date, including leading zeros
+
+    200403 is the proper date format for the image on April 3rd, 2020
+
+Pictures are labeled with some title associated. They are not archived in a way to allow the retrieval by date.
+
+- Every page has only one picture on it, so inspecting the HTML source has the image URL in the IMG SRC tag.
+- URL for source:
+        view-source:https://apod.nasa.gov/apod/apYYMMDD.html
+- URL for image is:
+        https://apod.nasa.gov/apod/<image/year/name.jpg>, where <> encloses the IMG SRC tag in the HTML
+
+Example:
+        view-source:https://apod.nasa.gov/apod/ap200221.html
+
